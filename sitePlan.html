@@ -1,0 +1,8 @@
+<div class="site-plan">
+  <div class="site-plan" ng-repeat="space in $ctrl.spaces">
+    <span>
+      {{ space.tenant }}
+    </span>
+    {{ space.rent }} | {{ space.expirationDate }}
+  </div>
+</div>
