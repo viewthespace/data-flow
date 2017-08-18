@@ -1,4 +1,11 @@
-Site Plan
-<hr>
-<site-plan spaces="$ctrl.spaces" ></site-plan>
-<tenant-list tenants="$ctrl.tenants"></tenant-list>
+<site-plan
+  spaces="$ctrl.spaces"
+  on-space-selected="$ctrl.setSelectedSpace(space)">
+</site-plan>
+<tenant-list
+  spaces="$ctrl.spaces"
+  on-tenant-selected="$ctrl.setSelectedSpace(space)">
+</tenant-list>
+<space-detail
+  space="$ctrl.selectedSpace">
+</space>

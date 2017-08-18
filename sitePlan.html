@@ -1,5 +1,5 @@
 <div class="site-plan">
-  <div class="site-plan" ng-repeat="space in $ctrl.spaces">
+  <div class="site-plan" ng-repeat="space in $ctrl.spaces" ng-click="$ctrl.selectSpace($index)">
     <span>
       {{ space.tenant }}
     </span>

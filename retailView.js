@@ -1,10 +1,13 @@
 class RetailViewCtrl {
-  constructor() {
-    this.spaces = this.buildSpaces();
-    this.tenants = this.spaces.map(s => s.tenant);
+  $onInit() {
+    this.spaces = this._buildSpaces();
   }
 
-  buildSpaces() {
+  setSelectedSpace(space) {
+    this.selectedSpace = space;
+  }
+
+  _buildSpaces() {
     return [
       {
         tenant: "Starbucks",
