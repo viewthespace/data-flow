@@ -3,7 +3,8 @@ class SpaceDetailCtrl {
 
 angular.module("dataFlow").component("spaceDetail", {
   bindings: {
-    space: "<"
+    space: "<",
+    onClose: "&"
   },
   controller: SpaceDetailCtrl,
   templateUrl: "spaceDetail.html"

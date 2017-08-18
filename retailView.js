@@ -7,6 +7,10 @@ class RetailViewCtrl {
     this.selectedSpace = space;
   }
 
+  removeSelectedSpace() {
+    this.selectedSpace = null;
+  }
+
   _buildSpaces() {
     return [
       {

@@ -7,5 +7,6 @@
   on-tenant-selected="$ctrl.setSelectedSpace(space)">
 </tenant-list>
 <space-detail
-  space="$ctrl.selectedSpace">
+  space="$ctrl.selectedSpace"
+  on-close="$ctrl.removeSelectedSpace()">
 </space>
