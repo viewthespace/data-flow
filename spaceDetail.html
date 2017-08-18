@@ -1,5 +1,6 @@
 <div ng-if="$ctrl.space">
-  {{ $ctrl.space.tenant }}
+  <div>{{ $ctrl.space.tenant }}</div>
+  <div>Occupancy Cost: {{ $ctrl.space.occupancyCost }}</div>
   <span ng-click="$ctrl.onClose()">X</span>
 </div>
 <div ng-if="!$ctrl.space">Select a tenant / space for more info</div>
