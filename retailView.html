@@ -1,12 +1,14 @@
-<site-plan
-  spaces="$ctrl.spaces"
-  on-space-selected="$ctrl.setSelectedSpace(space)">
-</site-plan>
-<tenant-list
-  spaces="$ctrl.spaces"
-  on-tenant-selected="$ctrl.setSelectedSpace(space)">
-</tenant-list>
-<space-detail
-  space="$ctrl.selectedSpace"
-  on-close="$ctrl.removeSelectedSpace()">
-</space>
+<div class="retail-view">
+  <tenant-list
+    spaces="$ctrl.spaces"
+    on-tenant-selected="$ctrl.setSelectedSpace(space)">
+  </tenant-list>
+  <site-plan
+    spaces="$ctrl.spaces"
+    on-space-selected="$ctrl.setSelectedSpace(space)">
+  </site-plan>
+  <space-detail
+    space="$ctrl.selectedSpace"
+    on-close="$ctrl.removeSelectedSpace()">
+  </space-detail>
+</div>

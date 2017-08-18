@@ -1,8 +1,6 @@
-<div class="site-plan">
-  <div class="site-plan" ng-repeat="space in $ctrl.spaces" ng-click="$ctrl.selectSpace($index)">
-    <span>
-      {{ space.tenant }}
-    </span>
-    {{ space.rent }} | {{ space.expirationDate }}
+<div class="site-plan-item" ng-repeat="space in $ctrl.spaces" ng-click="$ctrl.selectSpace($index)">
+  <div>
+    {{ space.tenant }}
   </div>
+  {{ space.rent }} | {{ space.expirationDate }}
 </div>
