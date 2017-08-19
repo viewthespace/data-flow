@@ -1,6 +1,6 @@
 class TenantListCtrl {
   $onInit() {
-    this.tenants = this.spaces.map(s => s.tenant);
+    this.tenants = this.spaces.map(s => s.tenant).sort();
   }
 
   selectTenant(index) {

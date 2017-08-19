@@ -43,6 +43,18 @@ class RetailViewCtrl {
         expirationDate: "9/16/2029",
         occupancyCost: "10%",
       },
+      {
+        tenant: "Shoprite",
+        rent: "$2,300",
+        expirationDate: "8/15/2022",
+        occupancyCost: "4%",
+      },
+      {
+        tenant: "Home Depot",
+        rent: "$1,900",
+        expirationDate: "4/12/2020",
+        occupancyCost: "2%",
+      },
     ];
   }
 }

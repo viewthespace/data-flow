@@ -1,6 +1,14 @@
-<div class="site-plan-item" ng-repeat="space in $ctrl.spaces" ng-click="$ctrl.selectSpace($index)">
-  <div>
-    {{ space.tenant }}
+<h4>Site Plan</h4>
+<div class="row">
+  <div
+    class="site-plan-card"
+    ng-repeat="space in $ctrl.spaces">
+    <button
+      type="button"
+      class="btn space-button"
+      ng-class="$ctrl.spaceColor($index)"
+      ng-click="$ctrl.selectSpace($index)">
+      {{ space.tenant }}
+    </button>
   </div>
-  {{ space.rent }} | {{ space.expirationDate }}
 </div>

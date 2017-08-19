@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.list-group {
+  cursor: pointer;
+}
+
+.space-button {
+  cursor: pointer;
+  margin: 10px;
+}

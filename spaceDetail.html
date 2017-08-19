@@ -1,6 +1,23 @@
+<h4>Space Info</h4>
 <div ng-if="$ctrl.space">
-  <div>{{ $ctrl.space.tenant }}</div>
-  <div>Occupancy Cost: {{ $ctrl.space.occupancyCost }}</div>
-  <span ng-click="$ctrl.onClose()">X</span>
+  <span
+    class="glyphicon glyphicon-remove"
+    ng-click="$ctrl.onClose()">
+    X
+  </span>
+  <div class="card space-detail-card">
+    <h6 class="card-header">
+      {{ $ctrl.space.tenant }}
+    </h6>
+    <div class="card-body">
+      <div>Rent: {{ $ctrl.space.rent }}</div>
+      <div>Rent: {{ $ctrl.space.expirationDate }}</div>
+      <div>Occupancy Cost: {{ $ctrl.space.occupancyCost }}</div>
+    </div>
+  </div>
 </div>
-<div ng-if="!$ctrl.space">Select a tenant / space for more info</div>
+<div
+  class="alert alert-secondary"
+  ng-if="!$ctrl.space">
+  Select a tenant / space for more info
+</div>
