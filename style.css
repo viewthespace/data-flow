@@ -6,6 +6,10 @@ body {
   height: 100%;
 }
 
+.retail-view {
+  max-width: 1000px;
+}
+
 .list-group {
   cursor: pointer;
 }

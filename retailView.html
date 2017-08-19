@@ -1,16 +1,16 @@
 <div class="container-fluid bg-light retail-view">
   <div class="row">
     <div class="col-sm-4">
-      <tenant-list
-        spaces="$ctrl.spaces"
-        on-tenant-selected="$ctrl.setSelectedSpace(space)">
-      </tenant-list>
-    </div>
-    <div class="col-sm-4">
       <site-plan
         spaces="$ctrl.spaces"
         on-space-selected="$ctrl.setSelectedSpace(space)">
       </site-plan>
+    </div>
+    <div class="col-sm-4">
+      <tenant-list
+        spaces="$ctrl.spaces"
+        on-tenant-selected="$ctrl.setSelectedSpace(space)">
+      </tenant-list>
     </div>
     <div class="col-sm-4 space-detail">
       <space-detail
