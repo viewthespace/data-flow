@@ -2,7 +2,9 @@
 <ul
   class="list-group"
   ng-repeat="tenant in $ctrl.tenants"
-  ng-class="{ 'active-space': $ctrl.isSpaceActive($index) }"
   ng-click="$ctrl.selectTenant($index)">
-  <li class="list-group-item">{{ tenant }}</li>
+  <li class="list-group-item">
+    <span ng-if="$ctrl.isSelectedSpace($index)">*</span>
+    {{ tenant }}
+  </li>
 </ul>

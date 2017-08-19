@@ -6,8 +6,9 @@
     <button
       type="button"
       class="btn space-button"
-      ng-class="$ctrl.spaceStyles($index)"
+      ng-class="$ctrl.spaceColorStyle($index)"
       ng-click="$ctrl.selectSpace($index)">
+      <span ng-if="$ctrl.isSelectedSpace($index)">*</span>
       {{ space.tenant }}
     </button>
   </div>

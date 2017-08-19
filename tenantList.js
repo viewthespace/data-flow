@@ -10,7 +10,7 @@ class TenantListCtrl {
     this.onTenantSelected({ space: selectedSpace });
   }
 
-  isSpaceActive(index) {
+  isSelectedSpace(index) {
     if (this.selectedSpace === null) {
       return false;
     }
