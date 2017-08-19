@@ -15,6 +15,7 @@ class SitePlanCtrl {
 angular.module("dataFlow").component("sitePlan", {
   bindings: {
     spaces: "<",
+    selectedSpace: "<",
     onSpaceSelected: "&"
   },
   controller: SitePlanCtrl,

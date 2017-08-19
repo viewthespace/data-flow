@@ -1,6 +1,7 @@
 class RetailViewCtrl {
   $onInit() {
     this.spaces = this._buildSpaces();
+    this.selectedSpace = null;
   }
 
   setSelectedSpace(space) {

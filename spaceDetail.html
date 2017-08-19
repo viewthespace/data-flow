@@ -1,5 +1,5 @@
 <h4>Space Info</h4>
-<div ng-if="$ctrl.space">
+<div ng-if="$ctrl.selectedSpace">
   <span
     class="glyphicon glyphicon-remove"
     ng-click="$ctrl.onClose()">
@@ -7,17 +7,17 @@
   </span>
   <div class="card space-detail-card">
     <h6 class="card-header">
-      {{ $ctrl.space.tenant }}
+      {{ $ctrl.selectedSpace.tenant }}
     </h6>
     <div class="card-body">
-      <div>Rent: {{ $ctrl.space.rent }}</div>
-      <div>Rent: {{ $ctrl.space.expirationDate }}</div>
-      <div>Occupancy Cost: {{ $ctrl.space.occupancyCost }}</div>
+      <div>Rent: {{ $ctrl.selectedSpace.rent }}</div>
+      <div>Rent: {{ $ctrl.selectedSpace.expirationDate }}</div>
+      <div>Occupancy Cost: {{ $ctrl.selectedSpace.occupancyCost }}</div>
     </div>
   </div>
 </div>
 <div
   class="alert alert-secondary"
-  ng-if="!$ctrl.space">
+  ng-if="!$ctrl.selectedSpace">
   Select a tenant / space for more info
 </div>
