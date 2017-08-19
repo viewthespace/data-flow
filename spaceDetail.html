@@ -1,12 +1,12 @@
 <h4>Space Info</h4>
 <div ng-if="$ctrl.selectedSpace">
-  <span
-    class="glyphicon glyphicon-remove"
-    ng-click="$ctrl.onClose()">
-    X
-  </span>
-  <div class="card space-detail-card">
+  <div class="card">
     <h6 class="card-header">
+      <span
+        class="space-detail-close"
+        ng-click="$ctrl.onClose()">
+        &times;
+      </span>
       {{ $ctrl.selectedSpace.tenant }}
     </h6>
     <div class="card-body">

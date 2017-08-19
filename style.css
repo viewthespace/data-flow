@@ -11,3 +11,8 @@
   cursor: pointer;
   margin: 10px;
 }
+
+.space-detail-close {
+  cursor: pointer;
+  margin-right: 6px;
+}
