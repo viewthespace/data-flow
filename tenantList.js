@@ -4,7 +4,10 @@ class TenantListCtrl {
   }
 
   selectTenant(index) {
-    this.onTenantSelected({ space: this.spaces[index] });
+    let selectedSpace = this.spaces.filter(
+      s => s.tenant === this.tenants[index]
+    )[0];
+    this.onTenantSelected({ space: selectedSpace });
   }
 
   isSpaceActive(index) {
